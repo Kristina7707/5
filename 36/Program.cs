@@ -10,7 +10,7 @@ int[] CreateArray(int size)
      Console.Write("[");
     for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(1, 100);
+        array[i] = new Random().Next(-100, 100);
         if (i<array.Length-1)Console.Write($"{array[i]}, "); 
         else Console.Write(array[i]);
     }Console.Write("]");
