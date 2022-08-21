@@ -26,7 +26,7 @@ void PrintArray(int[] arr)
         if (i % 2 > 0) sum += arr[i];
     }
     Console.WriteLine();
-    Console.WriteLine($"Сумма чисел, элементов, стоящих на нечётных позициях(индексах) = {sum} ");
+    Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях(индексах) = {sum} ");
     
 }
 PrintArray(CreateArray(size));
