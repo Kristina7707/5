@@ -3,7 +3,7 @@
 // [3.5, 7.1, 22.9, 2.3, 78.5] -> 76.2
 
 int size = 4;
-double[] CreateArray(int size)
+double[]CreateArray(int size)
 {
     double[] array = new double[size];
    
@@ -23,7 +23,6 @@ void PrintDiffMinMax(double[] arr)
     double difference = arr.Max() - arr.Min(); 
     Console.WriteLine();
     Console.Write("Разница между максимальным и минимальным элементами массива = "); 
-    Console.Write(Math.Round (difference,3));
-    
+    Console.Write(Math.Round (difference,5));  
 }
 PrintDiffMinMax(CreateArray(size));
