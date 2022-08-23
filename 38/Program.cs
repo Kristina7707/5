@@ -10,6 +10,7 @@ double[]CreateArray(int size)
     for (int i = 0; i < size; i++)
     {
         array[i] = new Random().NextDouble();
+        array[i] = Math.Round(array[i], 1);
     }
     return array;
 }
@@ -23,6 +24,6 @@ void PrintDiffMinMax(double[] arr)
     double difference = arr.Max() - arr.Min(); 
     Console.WriteLine();
     Console.Write("Разница между максимальным и минимальным элементами массива = "); 
-    Console.Write(Math.Round (difference,5));  
+    Console.Write(Math.Round (difference,1));  
 }
 PrintDiffMinMax(CreateArray(size));
